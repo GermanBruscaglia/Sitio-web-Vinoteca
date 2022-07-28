@@ -1,0 +1,70 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-family: sans-serif;
+  }
+
+.sectionNosotros{
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    display: flex;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+    padding: .5em;
+    text-align: center;
+    width: 75%;  
+}
+.imagenNosotros{
+      display: flex;
+      flex-direction: column;
+      height: auto;
+      justify-content: center;
+      text-align: center;
+      width: 50%;
+}
+.imagenNosotros img{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+  .textoNosotros{
+     display: flex;
+     flex-direction: column;
+     height: 100%;
+     line-height: 2em;
+     width: 100%;
+  }
+  .tituloNosotros{
+    border-bottom: .1em solid rgb(165, 42, 104);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .parrafoNosotros{
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  @media (max-width: 768px) {
+    .sectionNosotros{
+      flex-direction: column;
+      margin-top: 0;
+      padding: 0;
+      width: 100%;
+    }
+    .imagenNosotros{
+      height: 50%;
+      width: 100%;
+    }
+  }

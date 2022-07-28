@@ -1,0 +1,56 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-family: sans-serif;
+  }
+.contenedorSection{
+    display: flex;
+    flex-wrap: wrap;
+    height: 75%;
+    justify-content: center;
+}
+.section{
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    text-align: center;
+    width: 40%;
+}
+.section img{
+    height: 75%;
+    padding: .5em;
+    width: 100%;
+}
+.tituloSection{
+    border-bottom: solid .1em rgb(165, 42, 104);
+    margin: .5em auto;
+    width: 90%;
+}
+.textoSection{
+    margin: .1em auto 1em auto;
+}
+
+@media (max-width: 768px) {
+    .contenedorSection{
+        flex-direction: column;
+        width: 100%;
+    }
+    .section{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 0;
+        width: 100%;
+    }
+    .section img{
+        padding: 0;
+        width: 100%;
+    }
+}

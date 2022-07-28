@@ -1,0 +1,310 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-family: sans-serif;
+  }
+
+  /*Header*/
+ .header{
+  width: 100%;
+ }
+  .menu{
+      align-items: center; 
+      background-color: rgba(0, 0, 0, 0.8); 
+      display: flex;
+      height: 7em;
+      justify-content: space-around;      
+  }
+  .menu a{
+      color: white;
+      text-decoration: none;
+  }
+  .nav a {
+    border-radius: 1em;
+    font-size: 1.2em;
+    padding: 1em;
+  } 
+  .nav a:hover{
+      background-color: rgb(165, 42, 104);
+  }
+
+  /*Main*/
+  .encabezado{
+      align-items: center;
+      background-color: rgb(165, 42, 104);
+      color: white;
+      display: flex;
+      font-size: 1.5em;
+      height: 4em;
+      justify-content: center;
+      margin-right: auto;
+      margin-left: auto;
+      text-align: center;
+      width: 90%;
+  }
+  .pruebaSection{
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    height: 17em;
+    margin: 4em auto;
+    width: 75%;
+  }
+  .pruebaImagen{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+    padding: .3em;
+    width: 50%;
+  }
+  .probando{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100%;    
+    width: 100%;
+  }
+  .pruebaContenido{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height:auto;
+    margin-left: 4em;
+    margin-right: 4em;
+    width: 100%;
+  }
+  .encabezadoSection{
+    border-bottom: solid .1em rgb(165, 42, 104) ;
+    font-size: 2em;
+    margin-top: .5em;
+    margin-bottom: .5em;
+    text-align: center;
+  }
+  .textoSection{
+    line-height: 1.5em;
+    text-align: center;
+  }
+  .pruebaContenido a{
+    border-radius: .5em;
+    color: white;
+    padding: .5em;
+    text-decoration: none;
+    text-align: center;
+  }
+  .pruebaContenido a:hover{
+    background-color: rgb(165, 42, 104);
+  }
+  
+  /*article*/
+  .tituloEventos{
+    align-items: center;
+    background-color: rgb(165, 42, 104);
+    color:white;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .eventos{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .articulos{
+    background-color: rgba(0, 0, 0, 0.8);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    height: 15em;
+    line-height: 1.5em;
+     margin-left: 1em;
+    margin-right: 1em;
+    text-align: center;
+    width: 33%;
+  }
+  .tituloArticulo{
+    border-bottom: solid .2em rgb(165, 42, 104);
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .textoArticulo{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+
+  /*Aside*/
+  .tituloRedes{
+    align-items: center;
+    background-color: rgb(165, 42, 104);
+    color:white;
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+  }
+  .cajaRedes{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    height: 10em;
+    justify-content: space-around;
+    margin: 1.5em auto ;
+    width: 75%;
+   }
+  .cajaRedes a{
+    border: .1em solid white;
+    border-radius: .2em;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    font-size: 2em;
+    justify-content: center;
+    margin: .2em .2em;
+    text-align: center;
+    text-decoration: none;
+    width: 24%; 
+  }
+  .cajaRedes a:hover{
+    border-color: rgb(165, 42, 104);
+    color: rgb(165, 42, 104);
+  }
+  
+  /*Footer*/
+  .footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    height: 5em;
+    justify-content: center;
+    line-height: 1.5em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+    text-align: center;
+  }
+  .textofooter a{
+    border: solid 1px white;
+    border-radius: .1em;    
+    color: white;
+    padding: .1em;    
+    text-decoration: none;
+  }
+  .textofooter a:hover{
+    border-color: rgb(165, 42, 104);
+    color: rgb(165, 42, 104);
+  }
+
+  @media (max-width: 768px) {
+    .encabezado{
+      margin-bottom: 0;
+      width: 100%;
+    }
+    .pruebaSection{
+      display: block;
+      justify-content: center;
+      margin-bottom: 17em;
+      margin-top: 0;      
+      width: 100%;
+    }
+    .pruebaImagen{
+      padding: 0;
+      width: 100%;
+    }
+    .encabezadoSection{
+      margin-top: 0;
+    }
+    .pruebaContenido{
+      background-color:rgba(0, 0, 0, 0.8);
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+    }
+    .pruebaContenido a{
+      background-color: rgb(165, 42, 104);
+      display: flex;
+      justify-content: center;
+    }
+    .tituloRedes{
+      width: 100%;
+    }
+    .cajaRedes{
+      flex-wrap: wrap;
+      margin-top: 0;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      width: 100%;
+    }
+    .cajaRedes a{
+      width: 40%;
+    }
+    .tituloEventos{
+      margin-bottom: 0;
+      width: 100%;
+    }
+    .eventos{
+      flex-direction: column;
+      width: 100%;
+    }
+    .articulos{
+      height: auto;
+      margin: 0 0 1em 0;
+      width: 100%;
+    }
+    .tituloArticulo{
+      margin-bottom: 0;
+    }
+    .tituloRedes{
+      text-align: center;
+     }
+  }
+
+  @media (max-width: 480px) {
+  .header{
+      width: 100%;
+    }
+ .menu {
+  align-items: center;
+  flex-direction: column;
+  height: 20em;
+  padding-inline-start: 0;
+  width: 100%;
+ }
+ .nav{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+ }
+ .nav a {
+  border: solid .2em white;
+  margin-bottom: .5em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 90%;  
+ }
+ .pruebaSection{
+  height: auto;
+  margin-bottom: 2em;
+ }
+ .pruebaContenido{
+  background-color: rgba(0, 0, 0, 0);
+ }
+ .cajaRedes{
+  height: auto;
+}
+ .cajaRedes a{
+  width: 100%;
+}
+  }

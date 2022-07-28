@@ -1,0 +1,42 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body{
+      font-family: sans-serif;
+  }
+.sectionNosotros{
+  justify-content: space-around;
+}
+.listaRedes, .listaTelefono{
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+  text-align: start;
+}
+.listaTelefono li {
+  color: white;
+  font-size: 1.5em;
+}
+.listaTelefono li i {
+  margin-right: .5em;
+}
+.sectionNosotros a{
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.sectionNosotros a i {
+  margin-right: .5em;
+}
+.sectionNosotros li{
+  list-style: none;
+}
+.sectionNosotros a:hover{
+  color: rgb(165, 42, 104);
+}
